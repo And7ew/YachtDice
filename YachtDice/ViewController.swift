@@ -731,6 +731,7 @@ class ViewController: UIViewController {
         diceView1.isHidden = false
         pickdice1View.isHidden = false
         removedice1View.isHidden = true
+        dice1InRack = false
         
         
         for i in 0...rackDiceNums.count-1 {
@@ -748,6 +749,7 @@ class ViewController: UIViewController {
         diceView2.isHidden = false
         pickdice2View.isHidden = false
         removedice2View.isHidden = true
+        dice2InRack = false
         
         
         for i in 0...rackDiceNums.count-1 {
@@ -765,6 +767,7 @@ class ViewController: UIViewController {
         diceView3.isHidden = false
         pickdice3View.isHidden = false
         removedice3View.isHidden = true
+        dice3InRack = false
         
         
         for i in 0...rackDiceNums.count-1 {
@@ -782,6 +785,7 @@ class ViewController: UIViewController {
         diceView4.isHidden = false
         pickdice4View.isHidden = false
         removedice4View.isHidden = true
+        dice4InRack = false
         
         for i in 0...rackDiceNums.count-1 {
             if (rackDiceNums[i] == currDice4) {
@@ -798,6 +802,7 @@ class ViewController: UIViewController {
         diceView5.isHidden = false
         pickdice5View.isHidden = false
         removedice5View.isHidden = true
+        dice5InRack = false
         
         for i in 0...rackDiceNums.count-1 {
             if (rackDiceNums[i] == currDice5) {
