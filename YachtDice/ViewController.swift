@@ -70,6 +70,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var largeStraightNumView: UILabel!
     @IBOutlet weak var yachtNumView: UILabel!
     
+    //added bonus cause dont wanan add more than once
+    var addedBonus = false
     
     //rolls counter
     var rollsLeft = 3
@@ -220,13 +222,18 @@ class ViewController: UIViewController {
         
         categoriesNotLockedZero()
         
-        if (upperScore >= 63) {
+        if (upperScore >= 63 && !addedBonus) {
             totalScore += 35
             totalScoreView.text = String(totalScore)
+            addedBonus = true
         }
         
         if (finished == 12) {
             print("game over bitches")
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let ggScreenViewController = storyBoard.instantiateViewController(withIdentifier: "ggScreen") as! ggScreenViewController
+            self.present(ggScreenViewController, animated: true, completion: nil)
+            
         }
 
     }
@@ -250,7 +257,7 @@ class ViewController: UIViewController {
         twosLockView.isHidden = true
         totalScore += Int(twosNumView.text ?? "0")!
         totalScoreView.text = String(totalScore)
-        upperScore += Int(acesNumView.text ?? "0")!
+        upperScore += Int(twosNumView.text ?? "0")!
         resetAfterLockIn()
     }
     
@@ -260,7 +267,7 @@ class ViewController: UIViewController {
         threesLockView.isHidden = true
         totalScore += Int(threesNumView.text ?? "0")!
         totalScoreView.text = String(totalScore)
-        upperScore += Int(acesNumView.text ?? "0")!
+        upperScore += Int(threesNumView.text ?? "0")!
         resetAfterLockIn()
     }
     
@@ -270,7 +277,7 @@ class ViewController: UIViewController {
         foursLockView.isHidden = true
         totalScore += Int(foursNumView.text ?? "0")!
         totalScoreView.text = String(totalScore)
-        upperScore += Int(acesNumView.text ?? "0")!
+        upperScore += Int(foursNumView.text ?? "0")!
         resetAfterLockIn()
     }
     
@@ -280,7 +287,7 @@ class ViewController: UIViewController {
         fivesLockView.isHidden = true
         totalScore += Int(fivesNumView.text ?? "0")!
         totalScoreView.text = String(totalScore)
-        upperScore += Int(acesNumView.text ?? "0")!
+        upperScore += Int(fivesNumView.text ?? "0")!
         resetAfterLockIn()
     }
     
@@ -290,7 +297,7 @@ class ViewController: UIViewController {
         sixesLockView.isHidden = true
         totalScore += Int(sixesNumView.text ?? "0")!
         totalScoreView.text = String(totalScore)
-        upperScore += Int(acesNumView.text ?? "0")!
+        upperScore += Int(sixesNumView.text ?? "0")!
         resetAfterLockIn()
     }
     

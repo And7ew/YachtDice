@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4911DDD927ED33F6004BFDEB /* ggScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4911DDD827ED33F6004BFDEB /* ggScreen.swift */; };
 		49FE4CF127EBD2E200EA3B54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE4CF027EBD2E200EA3B54 /* AppDelegate.swift */; };
 		49FE4CF327EBD2E200EA3B54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE4CF227EBD2E200EA3B54 /* SceneDelegate.swift */; };
 		49FE4CF527EBD2E200EA3B54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE4CF427EBD2E200EA3B54 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4911DDD827ED33F6004BFDEB /* ggScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ggScreen.swift; sourceTree = "<group>"; };
 		49FE4CED27EBD2E200EA3B54 /* YachtDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YachtDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FE4CF027EBD2E200EA3B54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49FE4CF227EBD2E200EA3B54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				49FE4CF227EBD2E200EA3B54 /* SceneDelegate.swift */,
 				49FE4CF427EBD2E200EA3B54 /* ViewController.swift */,
 				49FE4CF627EBD2E200EA3B54 /* Main.storyboard */,
+				4911DDD827ED33F6004BFDEB /* ggScreen.swift */,
 				49FE4CF927EBD2E400EA3B54 /* Assets.xcassets */,
 				49FE4CFB27EBD2E400EA3B54 /* LaunchScreen.storyboard */,
 				49FE4CFE27EBD2E400EA3B54 /* Info.plist */,
@@ -141,6 +144,7 @@
 				49FE4CF527EBD2E200EA3B54 /* ViewController.swift in Sources */,
 				49FE4CF127EBD2E200EA3B54 /* AppDelegate.swift in Sources */,
 				49FE4CF327EBD2E200EA3B54 /* SceneDelegate.swift in Sources */,
+				4911DDD927ED33F6004BFDEB /* ggScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +299,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,7 +328,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
